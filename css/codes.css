@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.navbar-default {
+    background: none !important;
+    border-color: #fff !important;
+    padding-top: 20px;
+}
+
+header .container {
+    position: relative;
+}
+
+header button {
+    float: left !important;
+}
+
+header .form {
+    float: right !important;
+    position: absolute;
+    right: 17px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: red !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: red !important;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background: #fff !important;
+}
+
+.header-form {
+    vertical-align: middle;
+}
+
+.header-form input {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 12px 10px 8px 6px;
+}
+
+.form_span {
+    position: absolute !important;
+    top: 15px !important;
+    right: 0px;
+}
+
+.nav li span {
+    display: block;
+    color: #777;
+}
+
+.nav li {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.nav > li > a {
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    padding-left: 0 !important;
+    font-weight: bold;
+    color: #F35B5B !important;
+}
+section {
+    clear: both;
+}
+
+section h3 {
+    color: #F35B5B;
+    padding-top: 10px;
+}
+.code{
+    padding:0px 10px;
+}
+.code table{
+    color: #999;
+   border-collapse:separate;
+    border-spacing:2px 0px;
+}
+.label{
+    border-radius: 4px;
+}
+.code1 a{
+   text-decoration: none;
+    display: inline-block;
+}
+.code1 h1{
+    margin-bottom: 1em;
+}
+@media (max-width: 640px){
+    .code1 h3, .code1 h2, .code1 h1, .code1 h4, .code1 h5 {
+        margin-bottom: .5em!important;
+    }
+}
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+@media (max-width: 320px){
+    ul.pagination li a {
+        font-size: 14px;
+        padding: 5px 11px !important;
+    }
+}
+.pagination-lg > li > a, .pagination-lg > li > span {
+    padding: 10px 16px;
+    font-size: 15px!important;
+    line-height: 1.3333333;
+}
+table{
+    border-collapse: collapse!important;
+}
+.badge-primary {
+    background-color: #03a9f4!important;
+}
+.badge-success {
+    background-color: #8bc34a!important;
+}
+.badge-warning {
+    background-color: #ffc107!important;
+}
+.badge-danger {
+    background-color: #e51c23!important;
+}
+.tab-pane p{
+    line-height: 2em;
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.nav-tabs {
+    margin-bottom: 1em!important;
+}
+.footer_left {
+    background: #555;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+footer ul li {
+    margin-top: 10px;
+}
+
+footer ul li h6 {
+    color: #fff;
+}
+
+footer ul li a {
+    color: rgba(255, 255, 255, 0.59);
+}
+
+.footer_right {
+    text-align: center;
+    padding: 2em 2em 1.5em;
+}
+
+.footer_right ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer_right ul li a {
+    height: 24px;
+    display: block;
+    width: 24px;
+}
+
+.footer_right ul li a:hover {
+    transform: rotatey(360deg);
+    transition: 1s;
+}
+
+.footer_right .font_img1 {
+    background: url("../img/icons.png") no-repeat 0px 0px;
+}
+
+.footer_right .font_img2 {
+    background: url("../img/icons.png") no-repeat -33px 0px;
+}
+
+.footer_right .font_img3 {
+    background: url("../img/icons.png") no-repeat -66px 0px;
+}
+
+.footer_right .font_img4 {
+    background: url("../img/icons.png") no-repeat -99px 0px;
+}
+
+.footer_right .font_img5 {
+    background: url("../img/icons.png") no-repeat -132px 0px;
+}
+
+.footer_right .footer_form {
+    margin-top: 2em;
+    padding: 1.5em;
+    background: #bdbaba;
+}
+
+.footer_right .footer_form input {
+    width: 70%;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border: 1px solid #fff;
+}
+.footer_right .footer_form button{
+    width: 25%;
+    padding: 7px 12px;
+    margin-left: -4px;
+    border: 2px solid #fff;
+    background: #555;
+    color: #fff;
+}
+@media (max-width: 480px) {
+    .footer_form button{
+        font-size: 0.85em;
+    }
+}
+@media (max-width:320px) {
+    .footer_form button{
+        width:72px!important;
+    }
+}
+.footer_right .footer_form button:hover{
+    width: 25%;
+    padding: 7px 12px;
+    margin-left: -4px;
+    border: 2px solid #555;
+    background: #fff;
+    color: #555;
+}
+
+
+
+
+
+

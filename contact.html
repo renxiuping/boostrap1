@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle button" data-toggle="collapse"
+                            data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <form class="form">
+                        <div class="header-form">
+                            <input type="text" placeholder="Search">
+                            <span class="glyphicon glyphicon-search form_span"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="header_li">
+                            <span>Home</span>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <span>About</span>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <span>Codes</span>
+                            <a href="codes.html">Codes</a>
+                        </li>
+                        <li>
+                            <span>Galley</span>
+                            <a href="Galley.html">Galley</a>
+                        </li>
+                        <li>
+                            <span style="color: red;">Contact</span>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="banner">
+    <div class="col-md-12 col-xs-12">
+        <img src="img/banner.jpg" alt="" style="width:100%;">
+    </div>
+</div>
+<section>
+    <div class="container">
+        <h3 class="text-center" style="color: #F35B5B;padding-top:1em; clear: both;">Contact Us</h3>
+        <div class="row">
+            <form>
+                <p class="row"><input type="text" placeholder="First Name" onkeyup="firstname()" id="name1" class="col-xs-12 col-md-6"> <span id="namespan"></span></p>
+                <p class="row"><input type="text" placeholder="Second Name" onkeyup="secondname()" id="name2"  class="col-xs-12 col-md-6"> <span id="namespan2"></span></p>
+                <p class="row"><input type="text" placeholder="Email Id" onkeyup="email1()" id="email"  class="col-xs-12 col-md-6"> <span id="emalispan"></span></p>
+                <p class="row">
+                    <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}"  class="col-xs-12 col-md-6">Message..</textarea>
+                </p>
+                <p class="row"><input type="submit" value="SUBMIT" onclick="submitname()" class="col-md-2 col-xs-5" style="margin-right:50px;margin-left: 50px;"> <input type="reset" value="CLEAR"  class="col-md-2 col-xs-5"></p>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="row">
+        <div class="col-md-8 col-xs-12 footer_left">
+            <div class="row">
+                <div class="col-md-3 col-xs-12 col-md-offset-1">
+                    <h4 style="color: #fff;">Navigation</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <h4 style="color: #fff;">Popular</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="#">Deserunt Mollit</a></li>
+                        <li><a href="#">Nulla Pariatur</a></li>
+                        <li><a href="#">Voluptate Velit</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <h4 style="color: #fff;">Get In Touch</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="#">Ola-ola street jump</a></li>
+                        <li><a href="#">260-14 City, Country</a></li>
+                        <li><a href="mailto:info@example.com">info@example.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-12 footer_right">
+            <div class="font">
+                <ul>
+                    <li><a href="#" class="font_img1"></a></li>
+                    <li><a href="#" class="font_img2"></a></li>
+                    <li><a href="#" class="font_img3"></a></li>
+                    <li><a href="#" class="font_img4"></a></li>
+                    <li><a href="#" class="font_img5"></a></li>
+                </ul>
+            </div>
+            <div class="footer_form">
+                <form>
+                    <input type="text" placeholder="Email">
+                    <button value="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $("header nav ul li").mouseenter(function () {
+        $(this).find("span").stop().animate({marginTop: "-40px"}, 500)
+    })
+    $("header nav ul li").mouseleave(function () {
+        $(this).find("span").stop().animate({marginTop: "0px"}, 500)
+    })
+    function firstname(){
+        var name = document.getElementById("name1").value;
+        if(name.length<5){
+            document.getElementById("namespan").innerHTML="长度不能少于5位"
+        }else{
+            document.getElementById("namespan").innerHTML="正确";
+        }
+    }
+    function secondname(){
+        var name = document.getElementById("name2").value;
+        if(name.length<5){
+            document.getElementById("namespan2").innerHTML="长度不能少于5位"
+        }else{
+            document.getElementById("namespan2").innerHTML="正确";
+        }
+    }
+    function email1(){
+        var email=document.getElementById("email").value;
+        var a = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+        if(!a.test(email)){
+            document.getElementById("emalispan").innerHTML="不符合规范"
+        }else{
+            document.getElementById("emalispan").innerHTML="正确"
+        }
+    }
+    function submitname(){
+        var name=document.getElementById("name1").value;
+        if(name==""){
+            alert("用户名不能为空");
+            return false;
+        }
+    }
+</script>
+</html>
