@@ -312,8 +312,8 @@ footer ul li a {
     border: 1px solid #fff;
 }
 .footer_right .footer_form button{
-    width: 25%;
-    padding: 7px 12px;
+    width: 30%;
+    padding: 7px 7px;
     margin-left: -4px;
     border: 2px solid #fff;
     background: #555;
@@ -330,9 +330,6 @@ footer ul li a {
     }
 }
 .footer_right .footer_form button:hover{
-    width: 25%;
-    padding: 7px 12px;
-    margin-left: -4px;
     border: 2px solid #555;
     background: #fff;
     color: #555;
